@@ -179,7 +179,6 @@ export function PackageListItem({ p, }: { p: PackageType; }) {
           <Button
             className="h-9 rounded-full px-5 text-[12px]"
             style={{ backgroundColor: BRAND }}
-            onClick={() => window.alert(`Detail: ${p.title}`)}
           >
             View Detail
           </Button>
