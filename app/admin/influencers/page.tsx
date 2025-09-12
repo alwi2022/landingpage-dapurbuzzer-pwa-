@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo,  useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Plus, Pencil, Trash2, User, AtSign, Hash, Image as ImgIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, useDebounce } from "@/components/ui/card";
@@ -162,9 +162,9 @@ export default function AdminInfluencersPage() {
       <main className="mx-auto max-w-6xl p-4">
         {/* Toolbar */}
         <Card className="rounded-xl">
-        <CardContent className="p-4">
-  <div className="flex flex-col gap-3 md:flex-row md:items-center">
-    <div className="flex-1 flex gap-2">
+          <CardContent className="p-4">
+            <div className="flex flex-col gap-3 md:flex-row md:items-center">
+              <div className="flex-1 flex gap-2">
                 <Input
                   placeholder="Cari nama / username…"
                   value={search}
@@ -187,7 +187,7 @@ export default function AdminInfluencersPage() {
 
                 <Dialog open={createOpen} onOpenChange={setCreateOpen}>
                   <DialogTrigger asChild>
-                  <Button className="h-10 rounded-full px-4 bg-[#6f2dbd] hover:bg-[#5a23a1] w-full sm:w-auto justify-center">
+                    <Button className="h-10 rounded-full px-4 bg-[#6f2dbd] hover:bg-[#5a23a1] w-full sm:w-auto justify-center">
                       <Plus className="h-4 w-4 mr-2" /> Tambah Influencer
                     </Button>
                   </DialogTrigger>
