@@ -109,7 +109,7 @@ export default function DapurBuzzerLandingCompact() {
                 src={BANNERS[slide].img}
                 alt={BANNERS[slide].caption}
                 className="absolute inset-0 h-full w-full object-cover"
-                style={{ objectPosition: (BANNERS[slide] as any).focal ?? "center 20%" }}
+                style={{ objectPosition: (BANNERS[slide] as { focal?: string }).focal ?? "center 20%" }}
               />
               <div className="absolute right-4 bottom-1 flex gap-1">
                 {BANNERS.map((_, i) => (

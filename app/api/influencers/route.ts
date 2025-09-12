@@ -40,8 +40,10 @@ export async function GET(req: NextRequest) {
         totalPages: Math.ceil((count || 0) / limit),
       },
     });
-  } catch (err: any) {
-    return NextResponse.json({ error: err.message }, { status: 500 });
+  } catch (err: unknown) {
+    const message =
+    err instanceof Error ? err.message : typeof err === "string" ? err : "Unknown error";
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }
 
@@ -55,7 +57,9 @@ export async function POST(req: Request) {
       .single();
     if (error) throw error;
     return NextResponse.json(data);
-  } catch (err: any) {
-    return NextResponse.json({ error: err.message }, { status: 500 });
+  } catch (err: unknown) {
+    const message =
+    err instanceof Error ? err.message : typeof err === "string" ? err : "Unknown error";
+  return NextResponse.json({ error: message }, { status: 500 });
   }
 }

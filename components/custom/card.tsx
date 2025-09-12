@@ -4,8 +4,9 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { BRAND, TESTIMONIALS } from "@/app/data/data";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
-import { useRef, useEffect, useState } from "react";
+import {  useState } from "react";
 import { SheetClose } from "../ui/sheet";
+
 
 export function Rating({ n = 5 }: { n?: number }) {
   return (

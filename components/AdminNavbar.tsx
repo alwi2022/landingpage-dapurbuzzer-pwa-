@@ -19,7 +19,7 @@ export default function AdminNavbar() {
         <nav className="text-sm flex items-center gap-4">
           <Link href="/" className="hover:underline">Lihat Site</Link>
           <span className="inline-flex items-center rounded-full bg-[--brand-ghost] px-2 py-0.5 text-[11px] text-[color:var(--brand)]"
-            style={{ ['--brand' as any]: BRAND, ['--brand-ghost' as any]: `${BRAND}15` }}>
+            style={{ ['--brand' as string]: BRAND, ['--brand-ghost' as string]: `${BRAND}15` }}>
             Admin
           </span>
         </nav>

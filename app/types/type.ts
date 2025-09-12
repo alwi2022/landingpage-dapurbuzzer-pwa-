@@ -6,8 +6,7 @@ export type Client = { name: string; img: string };
 export type RangeKey = "any" | "0-10" | "10-50" | "50-100" | "100+";
 
 export type InfluencersMetaResp =
-| { data: any[]; meta: { total: number } }
-| any[];
+| { data: unknown[]; meta: { total: number } }
 
 export type InfluencerType = {
     id: string;

@@ -39,7 +39,7 @@ export default function UploadToCloudinary({
       const json = await res.json();
       // secure_url: https hosted image
       onUploaded(json.secure_url);
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error(err);
       setError("Upload gagal. Coba lagi.");
     } finally {

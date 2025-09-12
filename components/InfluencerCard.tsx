@@ -2,7 +2,7 @@
 
 import { Instagram } from "lucide-react";
 import * as React from "react";
-
+import Image from "next/image";
 export type Influencer = {
     id: string;
     name: string;
@@ -28,17 +28,16 @@ export function formatFollowers(n?: number | null) {
 
 type Props = {
     data: Influencer;
-    /** "sm" = mini horizontal; "md" = kartu grid */
     size?: "sm" | "md";
     badgeText?: string;
     className?: string;
     onClick?: () => void;
     dense?: boolean;
     /** CTA */
-    ctaText?: string;                // default: "Book Now"
+    ctaText?: string;
     onBook?: (i: Influencer) => void;
-    bookHref?: string;               // kalau pakai link (mis. WhatsApp)
-    brandColor?: string;             // default: #6f2dbd
+    bookHref?: string;
+    brandColor?: string;
 };
 
 export default function InfluencerCard({

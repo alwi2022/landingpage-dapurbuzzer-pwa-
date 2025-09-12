@@ -25,9 +25,7 @@ import { MenuItem, NavGroup } from "@/components/custom/card";
 
 const BRAND = "#6f2dbd";
 
-export default function HeaderMenu({
-}: {
-    }) {
+export default function HeaderMenu() {
 
 
     useEffect(() => {

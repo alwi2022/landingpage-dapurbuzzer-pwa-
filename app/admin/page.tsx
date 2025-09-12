@@ -40,7 +40,7 @@ export default function AdminHome() {
   return (
     <div
       className="min-h-screen bg-zinc-50"
-      style={{ ["--brand" as any]: BRAND }}
+      style={{ ["--brand" as string]: BRAND }}
     >
       <main className="mx-auto max-w-5xl p-4 space-y-6">
         <header>

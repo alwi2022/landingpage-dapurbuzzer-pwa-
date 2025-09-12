@@ -7,7 +7,7 @@ const BRAND = "#6f2dbd" as const;
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen bg-zinc-50" style={{ ["--brand" as any]: BRAND }}>
+    <div className="min-h-screen bg-zinc-50" style={{ ["--brand" as string]: BRAND }}>
       <AdminNavbar />
       <div className="mx-auto max-w-7xl px-4">
         <div className="md:flex md:gap-4">
