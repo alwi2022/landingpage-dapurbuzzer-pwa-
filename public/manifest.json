@@ -1,8 +1,0 @@
-{
-    "name": "DapurBuzzer",
-    "display": "standalone",
-    "orientation": "portrait",
-    "start_url": "/",
-    "icons": "logo.png"
-  }
-  
