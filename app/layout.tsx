@@ -25,10 +25,7 @@ export const metadata: Metadata = {
   title: "Dapur Buzzer Landing Page",
   description: "Dapur Buzzer Landing Page",
   manifest: "/manifest.webmanifest",
-  icons: {
-    icon: "/icons/logo-192x192.png",
-    apple: "/icons/logo-192x192.png",
-  },
+  icons: { icon: "/favicon.ico", apple: "/icons/logo-192x192.png" },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -43,8 +40,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="id" data-scroll-behavior="smooth">
       <body
+        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <RegisterSW />

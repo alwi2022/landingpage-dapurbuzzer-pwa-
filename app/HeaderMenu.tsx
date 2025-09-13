@@ -80,6 +80,7 @@ export default function HeaderMenu() {
             <SheetContent
                 side="left"
                 className="w-[86%] sm:w-96 p-0 flex h-full flex-col"
+                aria-describedby={undefined}
             >
                 {/* HEADER */}
                 <SheetHeader className="p-4 pb-2">
